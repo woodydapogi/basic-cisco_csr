@@ -1,0 +1,6 @@
+R1(config)#username user1 privilege 15 password password123
+R1(config)#netconf ssh
+R1(config)#netconf-yang
+R1(config)#line vty 0 4
+R1(config-line)#transport input ssh
+R1(config-line)#login local
